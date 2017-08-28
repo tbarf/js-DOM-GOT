@@ -1,6 +1,137 @@
 html {
-  box-sizing: border-box;
+    background: url(images/got.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+html,
+body {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    height: 100%;
+    margin: 40px;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+#crest {
+    width: 33%;
+    height: 33%;
+    object-fit: scale-down;
+    margin: auto;
+}
+.l-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+    color: white;
+}
+.grid-item {} .three-col-grid0 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #1E1A31;
+    margin: auto;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 5px solid #000000;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.three-col-grid1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #061626;
+    margin: auto;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 5px solid #000000;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.three-col-grid2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #161616;
+    margin: auto;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 5px solid #000000;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.three-col-grid3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #902314;
+    margin: auto;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 5px solid #000000;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.three-col-grid4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #2E2E2E;
+    margin: auto;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 5px solid #000000;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.three-col-grid5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #221f34;
+    margin: auto;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 5px solid #000000;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
 }
