@@ -25,15 +25,19 @@ body {
     object-fit: scale-down;
     margin: auto;
 }
-.l-wrap {
+.flip-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     text-align: center;
     color: white;
+    align-content: space-evenly;
+    grid-auto-flow: row;
+
+
 }
-.grid-item {} .three-col-grid0 {
+ .flipper0 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -49,8 +53,9 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+
 }
-.three-col-grid1 {
+.flipper1 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -66,8 +71,9 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+
 }
-.three-col-grid2 {
+.flipper2 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -83,14 +89,15 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+
 }
-.three-col-grid3 {
+.flipper3 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     border-radius: 5px;
-    padding: 20px;
+    padding: 5px;
     background-color: #902314;
     margin: auto;
     border-radius: 14px 14px 14px 14px;
@@ -100,14 +107,15 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+
 }
-.three-col-grid4 {
+.flipper4 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 3;
     border-radius: 5px;
-    padding: 20px;
+    padding: 5px;
     background-color: #2E2E2E;
     margin: auto;
     border-radius: 14px 14px 14px 14px;
@@ -117,8 +125,9 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+
 }
-.three-col-grid5 {
+.flipper5 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -134,4 +143,6 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
+
 }
+

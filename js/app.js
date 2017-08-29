@@ -57,26 +57,33 @@ var kingdoms = [{
 var main = document.body;
 
 var mainDiv = document.createElement('div');
-mainDiv.className = "l-wrap";
+mainDiv.className = "flip-container";
 main.appendChild(mainDiv);
 
 for (var i = 0; i < kingdoms.length; i++) {
     var ChildDiv = document.createElement('div');
-    ChildDiv.className = "three-col-grid" + i;
+    ChildDiv.className = "flipper" + i;
     mainDiv.appendChild(ChildDiv);
 
+
+    var front = document.createElement("div");
+    front.className = "faceFront" + i;
+    ChildDiv.appendChild(front);
+
+var back = document.createElement("div");
+    back.className = "faceBack" + i;
+    ChildDiv.appendChild(back);
+
     var houseBox = document.createElement('div');
-    houseBox.className = "grid-item";
     houseBox.id = "house" + i;
     houseBox.textContent = "Kingdom: " + kingdoms[i].house;
-    ChildDiv.appendChild(houseBox);
+    front.appendChild(houseBox);
 
 
     var sayingBox = document.createElement('div');
-    sayingBox.className = "grid-item";
     sayingBox.id = "saying" + i;
     sayingBox.textContent = "Saying: " + kingdoms[i].saying;
-    ChildDiv.appendChild(sayingBox);
+    front.appendChild(sayingBox);
 
 
 
@@ -84,21 +91,19 @@ for (var i = 0; i < kingdoms.length; i++) {
     crestBox.id = "crest" + i;
     crestBox.className = "image";
     crestBox.src = kingdoms[i].crest;
-    ChildDiv.appendChild(crestBox);
+    front.appendChild(crestBox);
 
 
     var regionBox = document.createElement('div');
     regionBox.id = "region" + i;
-    regionBox.className = "grid-item";
     regionBox.textContent = "Region: " + kingdoms[i].region;
-    ChildDiv.appendChild(regionBox);
+    front.appendChild(regionBox);
     var lordBox = document.createElement('div');
     lordBox.id = "lord" + i;
-    lordBox.className = "grid-item";
     lordBox.textContent = "Lord: " + kingdoms[i].lord;
-    ChildDiv.appendChild(lordBox);
+    front.appendChild(lordBox);
     var allegianceBox = document.createElement('div');
     allegianceBox.id = "allegiance" + i;
-    allegianceBox.className = "grid-item";
     allegianceBox.textContent = "Allegiance: " + kingdoms[i].allegiance;
-    ChildDiv.appendChild(allegianceBox);
+    front.appendChild(allegianceBox);
+}
