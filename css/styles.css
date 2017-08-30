@@ -5,26 +5,28 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-html,
-body {
+
+html, body {
     box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
+
+*, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     height: 100%;
     margin: 40px;
     font-family: 'Sedgwick Ave Display', cursive;
 }
+
 #crest {
     width: 33%;
     height: 33%;
     object-fit: scale-down;
     margin: auto;
 }
+
 .flip-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,10 +36,14 @@ body {
     color: white;
     align-content: space-evenly;
     grid-auto-flow: row;
-
-
+    position: relative;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    width: 615px margin:auto;
+    position: relative;
 }
- .flipper0 {
+
+.flipper0 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -53,8 +59,20 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
-
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.flipper0:hover {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
 .flipper1 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -71,8 +89,20 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
-
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.flipper1:hover {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
 .flipper2 {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -89,8 +119,20 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
-
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.flipper2:hover {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
 .flipper3 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -107,8 +149,20 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
-
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.flipper3:hover {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
 .flipper4 {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -125,8 +179,20 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
-
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.flipper4:hover {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
 .flipper5 {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -143,6 +209,25 @@ body {
     -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
-
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
+.flipper5:hover {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}

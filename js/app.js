@@ -94,6 +94,8 @@ var back = document.createElement("div");
     front.appendChild(crestBox);
 
 
+
+
     var regionBox = document.createElement('div');
     regionBox.id = "region" + i;
     regionBox.textContent = "Region: " + kingdoms[i].region;
